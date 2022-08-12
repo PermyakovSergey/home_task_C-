@@ -5,7 +5,14 @@
 // 918 -> 1
 
 Console.Write("Введите трехзначное число, программа покажет вторую цифру этого числа: ");
-string number = Convert.ToString(int.Parse(Console.ReadLine()));
+int num = int.Parse(Console.ReadLine());
+if (num < 0)
+{
+    num = num * -1;
+}
+
+string number = Convert.ToString(num);
+
 if (number.Length <= 2 || number.Length > 3)
 {
     Console.WriteLine("Введено не трехзначное число");

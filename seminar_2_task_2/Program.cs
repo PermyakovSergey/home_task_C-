@@ -7,7 +7,7 @@
 // 32679 -> 6
 
 Console.Write("Введите число, программа покажет третью цифру этого числа: ");
-string number = Convert.ToString(int.Parse(Console.ReadLine()));
+string number = Console.ReadLine();
 if (number.Length > 2)
 {
     Console.WriteLine("Третья цифра числа: " + number[2]);
