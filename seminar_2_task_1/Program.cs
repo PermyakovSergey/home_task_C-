@@ -6,5 +6,12 @@
 
 Console.Write("Введите трехзначное число, программа покажет вторую цифру этого числа: ");
 string number = Convert.ToString(int.Parse(Console.ReadLine()));
-Console.WriteLine("Введено число: " + number);
-Console.WriteLine("Вторая цифра числа: " + number[1]);
+if (number.Length <= 2 || number.Length > 3)
+{
+    Console.WriteLine("Введено не трехзначное число");
+}
+else
+{
+    Console.WriteLine("Введено число: " + number);
+    Console.WriteLine("Вторая цифра числа: " + number[1]);
+}
