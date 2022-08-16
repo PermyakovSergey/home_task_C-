@@ -5,7 +5,6 @@
 Console.Write("Введите число (N) для формирования таблицы кубов чисел от 1 до N.: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-// string[] table = string.Empty;
 for (int i = 1; i <= n; i++)
 {
     Console.WriteLine($"{i} в кубе = {Math.Pow(i, 3)}");
