@@ -10,7 +10,6 @@ string mirror = string.Empty;
 
 for (int index = 0; index < number.Length; index++)
 {
-    char temp = number[index];
     mirror = mirror + number[number.Length - index -1];
 }
 if (number == mirror)
