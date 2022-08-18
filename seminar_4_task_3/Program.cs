@@ -2,13 +2,6 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-Console.Write("Введите размер массива: ");
-int number = int.Parse(Console.ReadLine());
-Console.Write("Введите минимальное значение элемента массива: ");
-int min = int.Parse(Console.ReadLine());
-Console.Write("Введите максимальное значение элемента массива: ");
-int max = int.Parse(Console.ReadLine());
-
 void RandomMassive(int number, int min, int max)
 {
     if (number <= 0)
@@ -33,4 +26,10 @@ void RandomMassive(int number, int min, int max)
     }
     
 }
+Console.Write("Введите размер массива: ");
+int number = int.Parse(Console.ReadLine());
+Console.Write("Введите минимальное значение элемента массива: ");
+int min = int.Parse(Console.ReadLine());
+Console.Write("Введите максимальное значение элемента массива: ");
+int max = int.Parse(Console.ReadLine());
 RandomMassive(number, min, max);
