@@ -12,8 +12,8 @@ double degree(double x, int y)
     return result;
 }
 Console.WriteLine("Введите два числа, первое будет возведено в степень равную второму числу");
-Console.WriteLine("Введите первое число: ");
+Console.Write("Введите первое число: ");
 double a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число: ");
+Console.Write("Введите второе число: ");
 int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Число {a} в степени {b} равно: {degree(a, b)}");
