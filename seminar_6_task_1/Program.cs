@@ -2,28 +2,24 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-int[] EnterNumbersOfArray()
-{
-    int[] arr = new int[5];
-    for (int i = 0; i < arr.Length; i++)
-    {
-        Console.Write($"Enter the number {i + 1}: ");
-        arr[i] = int.Parse(Console.ReadLine());
-    }
-    Console.WriteLine(string.Join(", ", arr));
-    return arr;
-}
-
-void SummOfPositiveNumbers(int[] arr)
+void CountOfPositiveNumbers(int[] arr)
 {
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i] > 0) count ++;
     }
-    Console.WriteLine($"Number of positive numbers = {count}");
+    Console.WriteLine($"Count of positive numbers = {count}");
 }
 
-Console.WriteLine("Enter 5 numbers");
-int[] array = EnterNumbersOfArray();
-SummOfPositiveNumbers(array);
+Console.Write("Enter numbers separated by a space: ");
+
+string str = Console.ReadLine();
+string[] strArray = str.Split(' ');
+int[] array = new int[strArray.Length];
+for (int i = 0; i < array.Length; i++)
+{
+    array[i] = int.Parse(strArray[i]);
+}
+Console.WriteLine(string.Join(", ", array));
+CountOfPositiveNumbers(array);
