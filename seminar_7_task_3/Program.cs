@@ -56,8 +56,6 @@ PrintArray(array);
 // результаты вызова метода вычисления среднего арифметического столбцов, соответствующих индексу массива:
 // в значение arrayForResult[0], запишется округленный результат для столбца c индексом [i, 0]...
 double[] arrayForResult = new double[array.GetLength(1)];
-for (int i = 0; i < array.GetLength(1); i++)
-{
-    arrayForResult[i] = Math.Round(ArithmeticMeanOfColumn(array, i), 1);
-}
+for (int i = 0; i < array.GetLength(1); i++) arrayForResult[i] = Math.Round(ArithmeticMeanOfColumn(array, i), 1);
+
 Console.WriteLine($"Arithmetic mean of each column: {string.Join("; ", arrayForResult)}");
