@@ -36,7 +36,7 @@ void PrintArray(int[,] arr)
 }
 int[,] ProductMatrix(int[,] matrA, int[,] matrB)
 {
-    int[,] resultAB = new int[2, 2];
+    int[,] resultAB = new int[matrA.GetLength(0), matrB.GetLength(1)];
     for (int i = 0; i < resultAB.GetLength(0); i++)
     {
         for (int j = 0; j < resultAB.GetLength(1); j++)
@@ -51,13 +51,14 @@ int[,] ProductMatrix(int[,] matrA, int[,] matrB)
     }
     return resultAB;
 }
-
-int[,] matrixFirst = new int[2, 2];
+int rows = 2;
+int columns = 2;
+int[,] matrixFirst = new int[rows, columns];
 FillArray(matrixFirst);
 PrintArray(matrixFirst);
 Console.WriteLine();
 
-int[,] matrixSecond = new int[2, 2];
+int[,] matrixSecond = new int[rows, columns];
 FillArray(matrixSecond);
 PrintArray(matrixSecond);
 Console.WriteLine();
