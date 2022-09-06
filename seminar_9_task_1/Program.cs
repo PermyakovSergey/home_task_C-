@@ -2,3 +2,14 @@
 // M = 1; N = 5. -> ""1, 2, 3, 4, 5""
 // M = 4; N = 8. -> ""4, 6, 7, 8""
 
+
+void Main(int m, int n)
+{
+
+    Console.Write(m + " ");
+    m++;
+    if (m <= n) Main(m, n);
+}
+int m = 1;
+int n = 5;
+Main(m, n);
