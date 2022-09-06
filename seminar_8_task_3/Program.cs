@@ -51,14 +51,13 @@ int[,] ProductMatrix(int[,] matrA, int[,] matrB)
     }
     return resultAB;
 }
-int rows = 2;
-int columns = 2;
-int[,] matrixFirst = new int[rows, columns];
+int size = 2;
+int[,] matrixFirst = new int[size, size];
 FillArray(matrixFirst);
 PrintArray(matrixFirst);
 Console.WriteLine();
 
-int[,] matrixSecond = new int[rows, columns];
+int[,] matrixSecond = new int[size, size];
 FillArray(matrixSecond);
 PrintArray(matrixSecond);
 Console.WriteLine();

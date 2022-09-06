@@ -31,19 +31,6 @@ void PrintArray(int[,] arr)
     }
 }
 
-int FindMaxElement(int[,] arr, int rowInd, int colInd, int maxEl)
-{
-
-    for (int j = 0; j < arr.GetLength(1); j++)
-    {
-        if (arr[rowInd, j] > maxEl)
-        {
-            maxEl = arr[rowInd, j];
-        }
-    }
-    return maxEl;
-}
-
 void SortRowsOfArray(int[,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
