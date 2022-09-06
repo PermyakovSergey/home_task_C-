@@ -3,13 +3,13 @@
 // M = 4; N = 8. -> ""4, 6, 7, 8""
 
 
-void Main(int m, int n)
+void PrintNumbers(int startNumber, int finishNumber)
 {
 
-    Console.Write(m + " ");
-    m++;
-    if (m <= n) Main(m, n);
+    Console.Write(startNumber + " ");
+    startNumber++;
+    if (startNumber <= finishNumber) PrintNumbers(startNumber, finishNumber);
 }
-int m = 1;
-int n = 5;
-Main(m, n);
+int m = 4;
+int n = 8;
+PrintNumbers(m, n);
